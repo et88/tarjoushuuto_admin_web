@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap" rel="stylesheet">
+
+    <link type="text/css" href="/vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- Notyf -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+<!-- <link type="text/css" href="/vendor/notyf/notyf.min.css" rel="stylesheet"> -->
+
+<!-- CSS -->
+<link type="text/css" href="/css/style.css" rel="stylesheet">
+
+
+  
+ <!-- <script type="text/javascript" src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script> -->
+    <!-- <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>  -->
+
+<!-- Sweet Alert -->
+
+<script type="text/javascript" src="vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+    <!-- <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    
+    <!-- Vendor JS -->
+    <script type="text/javascript" src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    
+    <!-- Slider -->
+    <!-- <script type="text/javascript" src="vendor/nouislider/distribute/nouislider.min.js"></script> -->
+    
+    <!-- Smooth scroll -->
+    <script type="text/javascript" src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
+    <!-- Charts -->
+    <script type="text/javascript" src="vendor/chartist/dist/chartist.min.js"></script>
+    <script type="text/javascript" src="vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    
+    <!-- Datepicker -->
+    <script type="text/javascript" src="vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.20.1/full/ckeditor.js"></script>
+    <!-- Sweet Alerts 2 -->
+    <!-- <script type="text/javascript" src="vendor/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+    
+    <!-- Moment JS -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script> -->
+    
+    <!-- Vanilla JS Datepicker -->
+    <!-- <script type="text/javascript" src="vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script> -->
+    
+    <!-- Notyf -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script> -->
+    <!-- <script type="text/javascript" src="vendor/notyf/notyf.min.js"></script> -->
+    
+    <!-- Simplebar -->
+    <script type="text/javascript" src="vendor/simplebar/dist/simplebar.min.js"></script>
+    
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <!-- Volt JS -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+ 
+    <script type="text/javascript">
+
+    //   const swalWithBootstrapButtons = Swal.mixin({
+    //       customClass: {
+    //           confirmButton: 'btn btn-primary',
+    //           cancelButton: 'btn btn-gray'
+    //       },
+    //       buttonsStyling: false
+    //   });
+
+    //   // SweetAlert 2
+    //   document.getElementById('basicAlert').addEventListener('click', function () {
+    //       swalWithBootstrapButtons.fire(
+    //           'Basic alert',
+    //           'You clicked the button!'
+    //       )
+    //   });
+
+    //   document.getElementById('infoAlert').addEventListener('click', function () {
+    //       swalWithBootstrapButtons.fire(
+    //           'Info alert',
+    //           'You clicked the button!',
+    //           'info'
+    //       )
+    //   });
+
+    //   document.getElementById('successAlert').addEventListener('click', function () {
+    //       swalWithBootstrapButtons.fire({
+    //           icon: 'success',
+    //           title: 'Success alert',
+    //           text: 'Your work has been saved',
+    //           showConfirmButton: true,
+    //           timer: 1500
+    //       })
+    //   });
+
+    //   document.getElementById('warningAlert').addEventListener('click', function () {
+    //       swalWithBootstrapButtons.fire(
+    //           'Warning alert',
+    //           'You clicked the button!',
+    //           'warning'
+    //       )
+    //   });
+
+    //   document.getElementById('dangerAlert').addEventListener('click', function () {
+    //       swalWithBootstrapButtons.fire({
+    //           icon: 'error',
+    //           title: 'Oops...',
+    //           text: 'Something went wrong!',
+    //           footer: '<a href>Why do I have this issue?</a>'
+    //       })
+    //   });
+
+    //   document.getElementById('questionAlert').addEventListener('click', function () {
+    //       swalWithBootstrapButtons.fire(
+    //           'The Internet?',
+    //           'That thing is still around?',
+    //           'question'
+    //       );
+    //   });
+
+    //   document.getElementById('notifyTopLeft').addEventListener('click', function () {
+    //       const notyf = new Notyf({
+    //           position: {
+    //               x: 'left',
+    //               y: 'top',
+    //           },
+    //           types: [
+    //               {
+    //                   type: 'info',
+    //                   background: '#0948B3',
+    //                   icon: {
+    //                       className: 'fas fa-info-circle',
+    //                       tagName: 'span',
+    //                       color: '#fff'
+    //                   },
+    //                   dismissible: false
+    //               }
+    //           ]
+    //       });
+    //       notyf.open({
+    //           type: 'info',
+    //           message: 'Send us <b>an email</b> to get support'
+    //       });
+    //   });
+
+    //   document.getElementById('notifyTopRight').addEventListener('click', function () {
+    //       const notyf = new Notyf({
+    //           position: {
+    //               x: 'right',
+    //               y: 'top',
+    //           },
+    //           types: [
+    //               {
+    //                   type: 'error',
+    //                   background: '#FA5252',
+    //                   icon: {
+    //                       className: 'fas fa-times',
+    //                       tagName: 'span',
+    //                       color: '#fff'
+    //                   },
+    //                   dismissible: false
+    //               }
+    //           ]
+    //       });
+    //       notyf.open({
+    //           type: 'error',
+    //           message: 'This action is not allowed.'
+    //       });
+    //   });
+
+    //   document.getElementById('notifyBottomLeft').addEventListener('click', function () {
+    //       const notyf = new Notyf({
+    //           position: {
+    //               x: 'left',
+    //               y: 'bottom',
+    //           },
+    //           types: [
+    //               {
+    //                   type: 'warning',
+    //                   background: '#F5B759',
+    //                   icon: {
+    //                       className: 'fas fa-exclamation-triangle',
+    //                       tagName: 'span',
+    //                       color: '#fff'
+    //                   },
+    //                   dismissible: false
+    //               }
+    //           ]
+    //       });
+    //       notyf.open({
+    //           type: 'warning',
+    //           message: 'This might be dangerous.'
+    //       });
+    //   });
+
+    //   document.getElementById('notifyBottomRight').addEventListener('click', function () {
+    //       const notyf = new Notyf({
+    //           position: {
+    //               x: 'right',
+    //               y: 'bottom',
+    //           },
+    //           types: [
+    //               {
+    //                   type: 'info',
+    //                   background: '#262B40',
+    //                   icon: {
+    //                       className: 'fas fa-comment-dots',
+    //                       tagName: 'span',
+    //                       color: '#fff'
+    //                   },
+    //                   dismissible: false
+    //               }
+    //           ]
+    //       });
+    //       notyf.open({
+    //           type: 'info',
+    //           message: 'John Garreth: Are you ready for the presentation?'
+    //       });
+    //   });
+
+  </script>
+
+
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- <link href="/css/style.css" type="text/css" rel="stylesheet"> -->
+    <title>Admin</title>
+  </head>
+  <body>
+    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+    <!-- Core -->
+    
+   
